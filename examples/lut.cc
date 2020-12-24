@@ -6,8 +6,8 @@ int main() {
   PegasusRunTime::Parms pp;
 
   pp.lvl0_lattice_dim = lwe::params::n();
-  pp.lvl1_lattice_dim = 4096;
-  pp.lvl2_lattice_dim = 1 << 15;
+  pp.lvl1_lattice_dim = 1 << 12;
+  pp.lvl2_lattice_dim = 1 << 16;
   pp.nlevels = 4; // CKKS levels
   pp.scale = std::pow(2., 40);
   pp.nslots = 1 << 8;

@@ -15,8 +15,10 @@ Note that this repo should only be used for research and its code are still unde
 4. check the executables in `build-release/bin/`
 
 ### Examples
+****
 
 #### Homomorphic Look-up Tables
+
 * codes `examples/lut.cc`
 * This demo show the LUTs in Pegasus.
 

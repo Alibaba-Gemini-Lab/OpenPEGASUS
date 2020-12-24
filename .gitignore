@@ -5,7 +5,6 @@ bin/
 lib/
 build/
 *.build
-cmake/*
 !cmake/*.cmake.in
 thirdparty/googletest/**
 thirdparty/eigen/**
