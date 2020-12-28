@@ -7,6 +7,7 @@ Note that this repo should only be used for research and its code are still unde
 - git 
 - c++ compiler that supports at least C++14 standard
 - cmake version >= 3.10
+- GMP
 
 ### Out-of-source Build
 1. `mkdir -p build-release & cd build-release`
