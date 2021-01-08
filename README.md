@@ -1,7 +1,14 @@
 ## Pegasus: Bridging Polynomial and Non-polynomial Evaluations in Homomorphic Encryption
 
-This repo is the implmentation of the paper `Pegasus: Bridging Polynomial and Non-polynomial Evaluations in Homomorphic Encryption`.
+This repo is the implmentation of the paper [Pegasus: Bridging Polynomial and Non-polynomial Evaluations in Homomorphic Encryption](https://eprint.iacr.org/2020/1606).
 Note that this repo should only be used for research and its code are still under heavy developments.
+
+**Additional Note**
+
+The first version of our implementation used Han et al.'s method[^Han] for the homomorphic Sin function. The reported performance of the F_mod in our paper was based on Han et al.'s method. On the other hand, we update the F_mod implementation of [^Bossuat]. Our codes for this function are bascially taken from the [Lattigo](https://github.com/ldsec/lattigo) repo.
+
+[^Han]:Han et al. Better bootstrapping for approximate homomorphic encryption. 
+[^Bossuat]: Jean-Philippe Bossuat et al. Efficient Bootstrapping for Approximate Homomorphic Encryption with Non-Sparse Keys
 
 ### Requirements
 - git 

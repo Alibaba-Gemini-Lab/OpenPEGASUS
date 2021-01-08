@@ -52,6 +52,12 @@ class SinApproximatorBase {
   std::shared_ptr<RunTime> rt_;
 };
 
+/**
+  The algorithm are based on Jean-Philippe Bossuat et al's paper
+  Efficient Bootstrapping for Approximate Homomorphic Encryption with Non-Sparse Keys
+  The codes are majorly taken from 
+  https://github.com/ldsec/lattigo/blob/master/ckks/polynomial_evaluation.go
+*/
 class BetterSine : public SinApproximatorBase {
  public:
   explicit BetterSine(std::shared_ptr<RunTime> rt);
