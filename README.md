@@ -5,7 +5,11 @@ Note that this repo should only be used for research and its code are still unde
 
 **Additional Note**
 
-The first version of our implementation used [Han et al.'s method](https://eprint.iacr.org/2019/688.pdf) for the homomorphic Sin function. The reported performance of the F_mod in our paper was based on Han et al.'s method. On the other hand, we update the F_mod implementation to [Bossuat et al.'s method](https://eprint.iacr.org/2020/1203.pdf). Our codes for this function are bascially taken from the [Lattigo](https://github.com/ldsec/lattigo) repo.
+* The first version of our implementation used [Han et al.'s method](https://eprint.iacr.org/2019/688.pdf) for the homomorphic Sin function. The reported performance of the F_mod in our paper was based on Han et al.'s method. On the other hand, we update the F_mod implementation to [Bossuat et al.'s method](https://eprint.iacr.org/2020/1203.pdf). Our codes for this function are bascially taken from the [Lattigo](https://github.com/ldsec/lattigo) repo.
+
+* This repo provides the implementation of _binary_ [LWE secret key](https://github.com/Alibaba-Gemini-Lab/OpenPEGASUS/blob/master/pegasus/lwe.cc#L59).
+  For the ternary secret key, we can use the technique of [this paper](https://eprint.iacr.org/2020/086.pdf) at the cost of doubling the LUT time.
+
 
 ## Requirements
 
