@@ -10,6 +10,9 @@ Note that this repo should only be used for research and its code are still unde
 * This repo provides the implementation of _binary_ [LWE secret key](https://github.com/Alibaba-Gemini-Lab/OpenPEGASUS/blob/master/pegasus/lwe.cc#L59).
   For the ternary secret key, we can use the technique of [this paper](https://eprint.iacr.org/2020/086.pdf) at the cost of doubling the LUT time.
 
+**Additional Note (Update 2021-12-14)** 
+* PEGASUS can evaluate any point-wise function `f(x)` defined over the interval `x \in ZZ \caps [-N/2, N/2)`. This interval can be extended to `ZZ \caps [-N, N)` when the target function is negacyclic, i.e., `f(x+N) = f(x)`. As we have pointed in our paper, we assume the CKKS ciphertext should encrypt message in the range `[-q/4, q/4)` so that it can be discreted to the proper range `[-N/2, N/2)`.
+* To obtain a full domain look-up-table without the requirements of negacyclic functions, please refer to the paper [FDFB: Full Domain Functional Bootstrapping Towards Practical Fully Homomorphic Encryption](https://eprint.iacr.org/2021/1135.pdf).
 
 ## Requirements
 
